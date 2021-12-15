@@ -1,0 +1,26 @@
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\bin\Debug\netcoreapp3.1\Fourier Expansion.exe
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\bin\Debug\netcoreapp3.1\Fourier Expansion.deps.json
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\bin\Debug\netcoreapp3.1\Fourier Expansion.runtimeconfig.json
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\bin\Debug\netcoreapp3.1\Fourier Expansion.runtimeconfig.dev.json
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\bin\Debug\netcoreapp3.1\Fourier Expansion.dll
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\bin\Debug\netcoreapp3.1\Fourier Expansion.pdb
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\bin\Debug\netcoreapp3.1\MonoGame.Framework.dll
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libopenal.so.1
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\bin\Debug\netcoreapp3.1\runtimes\osx\native\libSDL2-2.0.0.dylib
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\bin\Debug\netcoreapp3.1\runtimes\osx\native\libopenal.1.dylib
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\SDL2.dll
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\soft_oal.dll
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SDL2.dll
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\soft_oal.dll
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\obj\Debug\netcoreapp3.1\Fourier Expansion.csproj.AssemblyReference.cache
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\obj\Debug\netcoreapp3.1\Fourier Expansion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\obj\Debug\netcoreapp3.1\Fourier Expansion.AssemblyInfoInputs.cache
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\obj\Debug\netcoreapp3.1\Fourier Expansion.AssemblyInfo.cs
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\obj\Debug\netcoreapp3.1\Fourier Expansion.csproj.CoreCompileInputs.cache
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\obj\Debug\netcoreapp3.1\Fourier Expansion.csproj.CopyComplete
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\obj\Debug\netcoreapp3.1\Fourier Expansion.dll
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\obj\Debug\netcoreapp3.1\Fourier Expansion.pdb
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\obj\Debug\netcoreapp3.1\Fourier Expansion.genruntimeconfig.cache
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\bin\Debug\netcoreapp3.1\Content\rectangle.xnb
+C:\Users\harry\Desktop\MonoGame\Fourier Expansion\Fourier Expansion\bin\Debug\netcoreapp3.1\Content\Arial.xnb
