@@ -32,10 +32,34 @@ namespace Fourier_Expansion
             new Vector2(0f * 20, -5f * 20),
             new Vector2(0f * 20, -10f * 20),
             new Vector2(0f * 20, -5f * 20)*/
-            new Vector2(-200f, -200f),
+            
+            /*new Vector2(-800/6f, -800/6f * (float)Math.Cos(Math.PI/6)),
+            new Vector2(0f, 800/6f * (float)Math.Cos(Math.PI/6)),
+            new Vector2(800/6f, -800/6f * (float)Math.Cos(Math.PI/6))*/
+            /*new Vector2(-200f, -200f),
             new Vector2(-200f, 200f),
             new Vector2(200f, 200f),
-            new Vector2(200f, -200f)
+            new Vector2(200f, -200f)*/
+            /*new Vector2(-110.111f, 80f),
+            new Vector2(42.059f, 129.443f),
+            new Vector2(136.104f, 0f),
+            new Vector2(42.059f, -129.443f),
+            new Vector2(-110.111f, -80f)*/
+            /*new Vector2(-66.667f, 115.47f),
+            new Vector2(66.667f, 115.47f),
+            new Vector2(133.333f, 0f),
+            new Vector2(66.667f, -115.47f),
+            new Vector2(-66.667f, -115.47f),
+            new Vector2(-133.333f, 0f)*/
+            new Vector2(-29.306f, 128.399f),
+            new Vector2(82.114f, 102.968f),
+            new Vector2(131.701f, 0f),
+            new Vector2(82.114f, -102.968f),
+            new Vector2(-29.306f, -128.399f),
+            new Vector2(-118.658f, -57.143f),
+            new Vector2(-118.658f, 57.143f)
+
+
             /*new Vector2(1.01f * 50f, 6.97f * 50f),
             new Vector2(-2.62f * 50f, 4.74f * 50f),
             new Vector2(-2.5f * 50f, 2.9f * 50f),
@@ -68,6 +92,11 @@ namespace Fourier_Expansion
             };
 
             InternalManager.LoadAssets(_textureNames, _fontNames, _soundEffectNames, _songNames);
+
+            for (int i = 0; i < 4; i++)
+            {
+
+            }
 
             _ui = new List<UIObject>()
             {

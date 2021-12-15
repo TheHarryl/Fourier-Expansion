@@ -25,10 +25,10 @@ namespace Fourier_Expansion
 
         #region Methods
 
-        public Fourier(List<Vector2> points, int n, Vector2 position) : base(new List<UIObject>(), position, new Vector2(1f, 1f), Color.White)
+        public Fourier(List<Vector2> points, int num, Vector2 position) : base(new List<UIObject>(), position, new Vector2(1f, 1f), Color.White)
         {
             _points = points;
-            _n = n;
+            _n = num;
 
             for (int i = 0; i < _points.Count; i++)
             {
@@ -36,12 +36,23 @@ namespace Fourier_Expansion
             }
 
             _vectorPoints = new List<Vector2>();
-            _vectors = new List<Vector2>();
             _currentPoint = new Vector2();
+            _vectors = new List<Vector2>();
             for (int i = 0; i < _n; i++)
             {
-                int c = (i % 2 == 0 ? i / 2 : -(i + 1) / 2);
-                Vector2 vector = new Vector2(Integrate(t => GetPolygonXAtTime(t) * (float)Math.Cos(-2 * Math.PI * t * c)) + Integrate(x => GetPolygonYAtTime(x) * (float)Math.Sin(2 * Math.PI * x * c)), Integrate(x => GetPolygonXAtTime(x) * (float)Math.Sin(2 * Math.PI * x * c)) - Integrate(x => GetPolygonYAtTime(x) * (float)Math.Cos(2 * Math.PI * x * c)));
+                int n = (i % 2 == 0 ? i / 2 : -(i + 1) / 2);
+                Vector2 vector = new Vector2(
+                    Integrate(t => 
+                        GetPolygonXAtTime(t) * (float)Math.Cos(-2 * Math.PI * n * t)
+                    ) + Integrate(t =>
+                        GetPolygonYAtTime(t) * (float)Math.Sin(-2 * Math.PI * n * t)
+                    ),
+                    Integrate(t =>
+                        GetPolygonXAtTime(t) * (float)Math.Sin(-2 * Math.PI * n * t)
+                    ) - Integrate(t =>
+                        GetPolygonYAtTime(t) * (float)Math.Cos(-2 * Math.PI * n * t)
+                    )
+                );
                 _vectors.Add(vector);
             }
             System.Diagnostics.Debug.WriteLine(_vectors.Count);
@@ -90,8 +101,8 @@ namespace Fourier_Expansion
                 else
                     offset = Math.PI + Math.Atan(vector.Y / vector.X);
                 int n = (i % 2 == 0 ? i / 2 : -(i + 1) / 2);
-                currentPosition.X += vector.Length() * (float)Math.Cos(-2 * Math.PI * n * t - offset);
-                currentPosition.Y += vector.Length() * (float)Math.Sin(-2 * Math.PI * n * t - offset);
+                currentPosition.X += vector.Length() * (float)Math.Cos(2 * Math.PI * n * t - offset);
+                currentPosition.Y += vector.Length() * (float)Math.Sin(2 * Math.PI * n * t - offset);
             }
             return currentPosition;
         }
@@ -112,8 +123,8 @@ namespace Fourier_Expansion
                     offset = Math.PI + Math.Atan(vector.Y / vector.X);
                 Vector2 newVector = points[points.Count - 1];
                 int n = (i % 2 == 0 ? i / 2 : -(i + 1) / 2);
-                newVector.X += vector.Length() * (float)Math.Cos(-2 * Math.PI * n * t - offset);
-                newVector.Y += vector.Length() * (float)Math.Sin(-2 * Math.PI * n * t - offset);
+                newVector.X += vector.Length() * (float)Math.Cos(2 * Math.PI * n * t - offset);
+                newVector.Y += vector.Length() * (float)Math.Sin(2 * Math.PI * n * t - offset);
                 points.Add(newVector);
             }
             return points;
@@ -136,11 +147,17 @@ namespace Fourier_Expansion
             _graph.SetData(_data);*/
             _fourierPoints = new List<Vector2>();
             _polygonPoints = new List<Vector2>();
-            for (int t = 0; t < _length * 2; t++)
+            for (int t = 0; t < _length; t++)
             {
-                _fourierPoints.Add(GetFourierAtTime(t / (_length * 2f)));
-                _polygonPoints.Add(GetPolygonAtTime(t / (_length * 2f)));
+                _fourierPoints.Add(GetFourierAtTime(t / (_length)));
+                _polygonPoints.Add(GetPolygonAtTime(t / (_length)));
             }
+            float sum = 0f;
+            for (int i = 0; i < _fourierPoints.Count; i++)
+            {
+                sum += Vector2.Distance(_fourierPoints[i], _polygonPoints[_polygonPoints.Count - 1 - i]) / _fourierPoints.Count;
+            }
+            System.Diagnostics.Debug.WriteLine(_length + " " + sum);
         }
 
         public override void Update(GameTime gameTime, Vector2 offset = new Vector2())
@@ -177,7 +194,7 @@ namespace Fourier_Expansion
             {
                 DrawLine(spriteBatch, position - _fourierPoints[i - 1], position - _fourierPoints[i], Color.White, 2);
             }
-            spriteBatch.Draw(InternalManager.LoadedTextures["rectangle"], new Rectangle((int)(Position + offset - _currentPoint).X - 5, (int)(Position + offset - _currentPoint).Y - 5, 11, 11), Color.Red);
+            //spriteBatch.Draw(InternalManager.LoadedTextures["rectangle"], new Rectangle((int)(Position + offset - _currentPoint).X - 5, (int)(Position + offset - _currentPoint).Y - 5, 11, 11), Color.Red);
 
             for (int i = 1; i < _vectorPoints.Count; i++)
             {

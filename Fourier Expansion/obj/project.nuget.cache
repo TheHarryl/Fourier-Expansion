@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d8vyM1THQ+1jAnpAT4goa+p+RFt1UeCPxvk4DUpb44PhK0dAUWMqRNTCXkmrbd7KNUbL9hNRVjt9ELDEG08h7g==",
+  "dgSpecHash": "BfqtUIXTmyOQBNSFni+l07OjeQJgJ/NZTeNYe2SpR5OF8oZeYs7D0yYU/M+8I9j8TmbZbrqHFAge0epqSdFJBA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\harry\\Desktop\\MonoGame\\Fourier Expansion\\Fourier Expansion\\Fourier Expansion.csproj",
+  "projectFilePath": "C:\\Users\\harry\\Documents\\GitHub\\Fourier-Expansion\\Fourier Expansion\\Fourier Expansion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\harry\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
     "C:\\Users\\harry\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"

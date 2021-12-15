@@ -4,8 +4,8 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/harry/Desktop/MonoGame/Fourier Expansion/Fourier Expansion/Content/Arial.spritefont</File>
-    <File>C:/Users/harry/Desktop/MonoGame/Fourier Expansion/Fourier Expansion/Content/rectangle.png</File>
+    <File>C:/Users/harry/Documents/GitHub/Fourier-Expansion/Fourier Expansion/Content/Arial.spritefont</File>
+    <File>C:/Users/harry/Documents/GitHub/Fourier-Expansion/Fourier Expansion/Content/rectangle.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
